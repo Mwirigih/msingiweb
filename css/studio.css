@@ -1,0 +1,38 @@
+:root{--ink:#17171A;--blue:#1d4fd8;--amber:#f5b301;--cream:#fbf6ea;--pink:#f4c6d0;--mut:#5b5b66}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--cream)}
+a{color:inherit}img,video{max-width:100%;height:auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:99}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{width:min(1080px,92%);margin:auto}
+header{background:var(--ink);position:sticky;top:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;gap:10px;align-items:center;color:#fff;text-decoration:none;font-weight:800}
+.brand img{width:36px;height:36px;border-radius:9px}
+nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:8px 12px;border-radius:8px;color:#e9e9ee;text-decoration:none;font-weight:600}
+nav a:hover,nav a[aria-current=page]{background:var(--amber);color:var(--ink)}
+#menu{display:none;background:none;border:1px solid #555;color:#fff;border-radius:8px;font-size:1.3rem;padding:4px 12px}
+.hero{background:linear-gradient(90deg,rgba(8,20,64,.94) 0%,rgba(8,20,64,.88) 50%,rgba(8,20,64,.15) 100%),#0a1f5c url(../assets/hero-bg.png) right center/cover;color:#fff;padding:96px 0}
+.hero.sm{padding:48px 0}
+.hero .wrap{display:block}
+.hero.sm .wrap{display:block}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;margin:0 0 16px}
+h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:0 0 12px}
+.hero p{font-size:1.1rem;max-width:56ch}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:700;text-decoration:none;background:var(--amber);color:var(--ink);margin:6px 8px 0 0}
+.btn.ghost{background:transparent;color:#fff;border:2px solid #fff}
+.vid{background:var(--ink);border-radius:18px;padding:10px;max-width:280px;justify-self:center}
+.vid video{width:100%;border-radius:12px;display:block}
+section{padding:60px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border-radius:16px;padding:24px;border:2px solid var(--ink)}
+.card.hl{background:var(--ink);color:#fff;border-color:var(--amber)}
+.card h3{margin:0 0 8px}.price{font-size:1.6rem;font-weight:800;color:var(--blue)}.hl .price{color:var(--amber)}
+.card ul{padding-left:18px;margin:10px 0 0}.note{color:var(--mut);font-size:.95rem}
+.band{background:var(--pink)}
+.qr{background:#fff;padding:14px;border-radius:14px;width:min(300px,100%)}
+footer{background:var(--ink);color:#cfcfd6;padding:36px 0;font-size:.95rem}
+footer a{color:var(--amber)}
+@media(max-width:760px){.hero{background:linear-gradient(rgba(8,20,64,.88),rgba(8,20,64,.88)),#0a1f5c url(../assets/hero-bg.png) center/cover;padding:64px 0}#menu{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:var(--ink);flex-direction:column;padding:8px 4%}nav ul.open{display:flex}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
