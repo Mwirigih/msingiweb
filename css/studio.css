@@ -5,7 +5,7 @@ a{color:inherit}img,video{max-width:100%;height:auto}
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:99}
 :focus-visible{outline:3px solid var(--amber);outline-offset:2px}
 .wrap{width:min(1080px,92%);margin:auto}
-header{header{background:var(--ink);position:sticky;top:0;z-index:20}}
+header{background:var(--navy);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(245,179,1,.25)}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .brand{display:flex;gap:10px;align-items:center;color:#fff;text-decoration:none;font-weight:800}
 .brand img{width:36px;height:36px;border-radius:9px}
