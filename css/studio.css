@@ -43,9 +43,10 @@ section{padding:60px 0}
 .card.hl{background:var(--ink);color:#fff;border-color:var(--amber)}
 .card h3{margin:0 0 8px}.price{font-size:1.6rem;font-weight:800;color:var(--blue)}.hl .price{color:var(--amber)}
 .card ul{padding-left:18px;margin:10px 0 0}.note{color:var(--mut);font-size:.95rem}
-.band{background:var(--pink)}
+.band{background:var(--pink)}.steps{background:#fff;border-top:1px solid rgba(23,23,26,.1);border-bottom:1px solid rgba(23,23,26,.1)}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--amber);font-weight:800;font-size:.95rem;margin-bottom:10px}
 .qr{background:#fff;padding:14px;border-radius:14px;width:min(300px,100%)}
 footer{background:var(--ink);color:#cfcfd6;padding:36px 0;font-size:.95rem}
 footer a{color:var(--amber)}
 @media(max-width:760px){.hero{min-height:75vh;min-height:75dvh;padding:64px 0}.hero::before{background:rgba(8,20,64,.86)}#menu{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:var(--ink);flex-direction:column;padding:8px 4%}nav ul.open{display:flex}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-video{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-video{display:none}} 
