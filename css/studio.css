@@ -1,4 +1,4 @@
-:root{--ink:#17171A;--blue:#1d4fd8;--amber:#f5b301;--cream:#fbf6ea;--pink:#f4c6d0;--mut:#5b5b66}
+:root{:root{--ink:#17171A;--blue:#1d4fd8;--amber:#f5b301;--cream:#fbf6ea;--pink:#f4c6d0;--mut:#5b5b66;--navy:#081440}}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--cream)}
 a{color:inherit}img,video{max-width:100%;height:auto}
