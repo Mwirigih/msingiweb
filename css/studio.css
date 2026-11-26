@@ -42,7 +42,23 @@ section{padding:60px 0}
 .card{background:#fff;border-radius:16px;padding:24px;border:2px solid var(--ink)}
 .card.hl{background:var(--ink);color:#fff;border-color:var(--amber)}
 .card h3{margin:0 0 8px}.price{font-size:1.6rem;font-weight:800;color:var(--blue)}.hl .price{color:var(--amber)}
-.card ul{padding-left:18px;margin:10px 0 0}.note{color:var(--mut);font-size:.95rem}
+.card ul{padding-left:18px;margin:10px 0 0}.note{color:var(--mut);font-size:.95rem}/* Portfolio Cards */
+.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px}
+.portfolio-card{padding:0;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease}
+.portfolio-card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(8,20,64,.12)}
+.preview{display:block;background:var(--ink);border-bottom:2px solid var(--ink);overflow:hidden;text-decoration:none}
+.browser-bar{display:flex;gap:6px;padding:8px 12px;background:#232329;border-bottom:1px solid rgba(255,255,255,.08)}
+.browser-bar span{width:9px;height:9px;border-radius:50%;background:#5b5b66}
+.browser-bar span:first-child{background:#ff5f56}
+.browser-bar span:nth-child(2){background:#ffbd2e}
+.browser-bar span:nth-child(3){background:#27c93f}
+.preview img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top center;transition:transform .35s ease}
+.portfolio-card:hover .preview img{transform:scale(1.03)}
+.card-body{padding:24px;display:flex;flex-direction:column;flex:1}
+.tag{display:inline-block;align-self:flex-start;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;background:var(--cream);color:var(--navy);border:1px solid rgba(8,20,64,.2);padding:4px 10px;border-radius:99px;margin-bottom:10px}
+.card-body p{margin:0 0 18px;color:var(--mut)}
+.card-actions{margin-top:auto}
+.card-actions .btn{margin:0}
 .band{background:var(--pink)}.steps{background:#fff;border-top:1px solid rgba(23,23,26,.1);border-bottom:1px solid rgba(23,23,26,.1)}
 .step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--amber);font-weight:800;font-size:.95rem;margin-bottom:10px}
 .qr{background:#fff;padding:14px;border-radius:14px;width:min(300px,100%)}
