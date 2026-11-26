@@ -66,3 +66,5 @@ footer{background:var(--ink);color:#cfcfd6;padding:36px 0;font-size:.95rem}
 footer a{color:var(--amber)}
 @media(max-width:760px){.hero{min-height:75vh;min-height:75dvh;padding:64px 0}.hero::before{background:rgba(8,20,64,.86)}#menu{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:var(--ink);flex-direction:column;padding:8px 4%}nav ul.open{display:flex}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-video{display:none}} 
+.card .btn.ghost{color:var(--ink);border-color:var(--ink)}
+.card .btn.ghost:hover{background:var(--cream)}
